@@ -1,4 +1,5 @@
 # Отворени Аудио Технологии
+[ползвайте стрелките за навигация ← → ↑ ↓]
 
 ## ... мисията (не)възможна
 
@@ -17,7 +18,7 @@
 ### Конспирацията на крушката
 
 ## MIDI
-
+https://en.wikipedia.org/wiki/MIDI
 - 1980 Roland -> DIN sync interface
 - 1981 Roland -> DCB (Digital Control Bus)
 - DCB protocol + DIN sync connector -> MIDI
@@ -26,31 +27,69 @@
 - 1983 Demonstration at NAMM, Publication of specs (August)
 
 ## Аудио под Linux
+http://linuxaudio.org
 
 ### Jack
+http://jackaudio.org
 
 ### Low latency kernel
+```sh
+# за ubuntu
+sudo apt-get update
+sudo apt-get install linux-lowlatency linux-headers-lowlatency
+```
 
 ### KXStudio
+http://kxstudio.linuxaudio.org -> Repositories
+
+### Jack & Pulseaudio
+```sh
+# ubuntu/debian
+# инсталирайте jack module-а за pulseaudio
+sudo apt-get install pulseaudio-module-jack
+
+# отворето конфиг-а на pulseaudio
+sudo nano /etc/pulse/default.pa
+
+# и добавете тези 2 реда
+load-module module-jack-sink
+load-module module-jack-source
+
+# рестартирайте pulseaudio
+killall pulseaudio
+```
 
 ## Open Apps
 
 ### Audacity
+http://www.audacityteam.org
 
 ### ZynAddSubFX
+http://zynaddsubfx.sourceforge.net
 
 ### LMMS
+https://lmms.io
 
 ### VCV Rack
+https://vcvrack.com
 
 ## Open Hardware
 
 ### Arduino & Raspberry PI
+https://www.arduino.cc
+https://www.raspberrypi.org
 
 ### Zynthian
+http://zynthian.org/
 
 ## Моите залитания
 
-## Showtime
+### MusicTechBG
+https://fb.com/groups/musictechbg
+https://www.meetup.com/MusicTechBG
 
-## Следващи стъпки
+### The Jam Station
+https://github.com/alex-milanov/jam-station
+https://alex-milanov.github.io/jam-station
+
+## Showtime

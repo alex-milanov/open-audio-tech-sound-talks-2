@@ -93,7 +93,7 @@ let intervalId = window.setInterval(() => {
 			_reload(...args);
 		};
 	}
-	// window.LiveReload.on('reload', (...args) => console.log({reload: args}));
+	window.LiveReload.on('reload', (...args) => console.log({reload: args}));
 }, 200);
 
 gamepad.changes()
